@@ -1,0 +1,33 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.wrapper {
+    background-color: gray;
+    width: 300px;
+    height: 200px;
+    border: 2px solid black;
+    margin: auto;
+    padding:
+}
+
+h1, h3 {
+    text-align: center;
+}
+
+button {
+    background-color: blue;
+    border: 1px solid black;
+    border-radius: 4px;
+    padding: 5px;
+    color: white;
+}
+
+form {
+    display: inline-block;
+}
+
+.divbutton {
+   margin-left: 70px;
+}

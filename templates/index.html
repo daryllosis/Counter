@@ -1,0 +1,31 @@
+<!-- 
+Author: Daryll Osis
+Date April 6, 2017
+Description: Build a flask application that counts the number of times the root route ('/') has been viewed. also, add 
+             an increment button that increments the session count by 2, and a reset button that resets the counter. 
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Counter</title>
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/styles.css')}}">
+</head>
+<body>
+    <div class="wrapper">
+        <h1>Counter</h1>
+        <h3>{{session['count']}} times</h3>
+        <div class="divbutton">
+            <form action='/increment' method='post'>
+                <button>Add two visits</button>
+            </form>
+            <form action='/reset' method='post'>
+                <button>Reset</button>
+            </form>
+        </div>
+        
+    </div>
+</body>
+</html>
